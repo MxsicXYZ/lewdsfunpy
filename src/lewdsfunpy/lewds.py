@@ -10,7 +10,7 @@ class LewdsAPI(object):
 
         try:
 
-            path = 'https://lewds.fun/api/v1/nsfw/{}'.format(self)
+            path = 'https://kyra.tk/v2/nsfw/img?end={}&apikey={}'.format(self, process.env.LEWDS_API_KEY)
             response = session.get(path, timeout=5)
             
             if response.json()["error"] == True:
