@@ -2,7 +2,7 @@ from dotenv import dotenv_values
 import requests
 config = dotenv_values(".env")
 
-Lewds_API_KEY = config.get('Lewds_API_KEY', None)
+Lewds_API_KEY = config.get('AhniKey', None)
 
 
 class APIKeyMissingError(Exception):
@@ -16,7 +16,7 @@ if Lewds_API_KEY is None:
         "for how to retrieve an authentication token from "
         "Lewds API and make a .env file "
         "with your key and value"
-        "ex:  Lewds_API_KEY=YOURAPITOKENHERE"
+        "ex:  AhniKey=YOURAPITOKENHERE"
     )
 
 session = requests.Session()
