@@ -12,7 +12,7 @@ class APIKeyMissingError(Exception):
 if Lewds_API_KEY is None:
     raise APIKeyMissingError(
         "All methods require an API key. See "
-        "https://docs.lewds.fun/api/api-keys "
+        "https://kyra.tk "
         "for how to retrieve an authentication token from "
         "Lewds API and make a .env file "
         "with your key and value"
